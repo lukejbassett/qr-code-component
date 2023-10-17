@@ -1,0 +1,64 @@
+:root {
+  --white: #fff;
+  --light-grey: #d5e1ef;
+  --grey: #7d889e;
+  --dark-navy: #1f314f;
+  --shade-blue: #3685ff;
+  --blue: #2c7dfa;
+}
+body {
+  background-color: var(--light-grey);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+.qr-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  padding: 1em;
+  width: 320px;
+  border-radius: 1.5em;
+  text-align: center;
+  background-color: var(--white);
+}
+.qr-code {
+  width: 320px;
+  border-radius: 1em;
+}
+.qr-card-header {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--dark-navy);
+}
+.qr-card-body {
+  font-size: 18px;
+  color: var(--grey);
+}
+.attribution {
+  font-size: 10px;
+  position: absolute;
+  top: 98%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.attribution a {
+  color: #3e52a3;
+}
+@media only screen and (max-width: 375px) {
+  .qr-card {
+    width: 240px;
+  }
+  .qr-code {
+    width: 240px;
+  }
+  .qr-card-header {
+    font-size: 20px;
+  }
+  .qr-card-body {
+    font-size: 16px;
+  }
+}
